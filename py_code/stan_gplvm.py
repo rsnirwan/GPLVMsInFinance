@@ -96,8 +96,8 @@ transformed parameters {
 }
 model {
     for (n in 1:N)
-        //X[n] ~ cauchy(0, 1);
-        X[n] ~ normal(0, 1);
+        X[n] ~ cauchy(0, 1);
+        //X[n] ~ normal(0, 1);
         
     sig_K ~ normal(0, .5);
     sigma ~ normal(0, .5);
