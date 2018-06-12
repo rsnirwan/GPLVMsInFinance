@@ -130,7 +130,7 @@ generated quantities {
             R2_hat_vec_N[n] = 1 - sum( square(row(resid,n)) )/ sum( square(row(Y,n)-mean(row(Y,n))) );
         
         R2_hat_N = mean(R2_hat_vec_N);
-
+        //K = K_noise;           //includes non-isotropic noise to the output K 
     }
     //print(R2_hat_N);
 }
